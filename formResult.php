@@ -1,5 +1,5 @@
 <?php
-require_once("function.php");
+require_once("functions.php");
 var_dump($_POST);
 
 if($_POST){
@@ -18,7 +18,7 @@ if($_POST){
     }
     echo'<br>';
     $saltedName=addSalt($_POST['fmotDePasse']);
-    var_dump($saltedName);
+    echo ($saltedName);
 
     echo'<br>';
     $encodName = encodName($saltedName);
@@ -26,4 +26,4 @@ if($_POST){
     }
 ?>
 <br>
-<a href="./index.php">retour</a>
+<a href="./index.php">Page précedentess</a>
